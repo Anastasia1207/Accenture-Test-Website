@@ -114,6 +114,7 @@ p {
   background-position: center;
   background-size: cover;
   border-radius: 10%;
+  flex-shrink: 0;
 }
 .msg-bubble {
   max-width: 450px;

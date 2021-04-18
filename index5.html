@@ -74,62 +74,57 @@
 <!-- /* ======== REGISTER ======== */ -->
 
 
-<form action="register-bar">
+<form id="register-form">
     <div class="container">
         <div class="register">
       <h2>Register</h2>
       <hr>
       <div class="input-selector">
         <label for="username"></label>
-       
-        <input type="text"  placeholder="Username&#42"  name="username" required>
+        <input type="text"  placeholder="Username&#42"  name="username" autocomplete="username" required>
       </div>
      
       <div class="input-selector">
-        <label for="psw"></label>
-        <input type="password" placeholder="Password&#42" name="psw" required>
+        <label for="password"></label>
+        <input type="password" placeholder="Password&#42" name="password" minlength="8" required>
       </div>
       <div class="input-selector">
-        <label for="psw-repeat"></label>
-        <input type="password" placeholder="Retype password&#42" name="psw-repeat" required>
+        <label for="passwordRepeat"></label>
+        <input type="password" placeholder="Retype password&#42" name="passwordRepeat" minlength="8" required>
       </div>
   <div class="input-selector">
-      <label for="first-name"></label>
-      <input type="text" placeholder="Firts name&#42" name="first-name" required>
+      <label for="given-name"></label>
+      <input type="text" placeholder="First name&#42" name="given-name" autocomplete="given-name" required>
     </div> 
     <div class="input-selector">
-        <label for="last-name"></label>
-        <input type="text" placeholder="Last name" name="first-name" required>
+        <label for="family-name"></label>
+        <input type="text" placeholder="Last name" name="family-name" autocomplete="family-name">
       </div>
 
     <div class="input-selector">
         <label for="country"></label>
-         <input list="browsers" placeholder="Country"/>
-          <datalist id="browsers">
+         <input list="countries" placeholder="Country" name="country"/>
+          <datalist id="countries">
             <option value="Latvia">
             <option value="USA">
             <option value="Italy">
             <option value="Australia">
             <option value="China">
             <option value="Russia">
-            <option value="Spain"></option>
-            <option value="Great Britan">
+            <option value="Spain">
+            <option value="Great Britain">
           </datalist>
     </div>
  <hr>
-
-
-   
   
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-        <label class="form-check-label" for="flexCheckIndeterminate">
+        <input class="form-check-input" type="checkbox" id="TandC" name="TandC">
+        <label class="form-check-label" for="TandC">
             <p>Agree with terms and conditions <a href="#">Terms & Privacy</a>.</p>
         </label>
       </div>
    
-      <button type="button" class="btn btn-secondary">Register</button>
-     
+      <button type="submit" class="btn btn-primary" name="submit" disabled>Register</button>
       
   </form>
 </div>
@@ -154,7 +149,7 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
     
-    <script src="./JS/main5.js "></script>
+    <script src="./JS/main5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>

@@ -12,7 +12,6 @@ const BOT_MSGS = [
 
 // Icons made by Freepik from www.flaticon.com
 const BOT_IMG = "https://www.flaticon.com/premium-icon/icons/svg/4166/4166244.svg";
-const PERSON_IMG = "https://www.flaticon.com/premium-icon/icons/svg/3059/3059518.svg";
 const BOT_NAME = "BOT";
 const PERSON_NAME = "Anastasia";
 
@@ -22,17 +21,17 @@ msgerForm.addEventListener("submit", event => {
   const msgText = msgerInput.value;
   if (!msgText) return;
 
-  appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+  appendMessage(PERSON_NAME, "right", msgText);
   msgerInput.value = "";
 
   botResponse();
 });
 
-function appendMessage(name, img, side, text) {
+function appendMessage(name, side, text, img) {
   //   Simple solution for small apps
   const msgHTML = `
     <div class="msg ${side}-msg">
-      <div class="msg-img" style="background-image: url(${img})"></div>
+      ${img ? `<div class="msg-img" style="background-image: url(${img})"></div>`: ''}
 
       <div class="msg-bubble">
         <div class="msg-info">
@@ -55,7 +54,7 @@ function botResponse() {
   const delay = msgText.split(" ").length * 100;
 
   setTimeout(() => {
-    appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+    appendMessage(BOT_NAME, "left", msgText, BOT_IMG);
   }, delay);
 }
 
