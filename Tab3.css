@@ -16,15 +16,22 @@ body {
   background-color: black;
 }
 
-/* ОТСАВИТЬ? */
-h1 {
-  margin: 0;
-}
-
+h2,
+h5,
+a,
 p {
   margin: 0 0 10px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-
+a {
+  text-decoration: none;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
 /* ======== CONTAINER  ======== */
 
 .container {
@@ -47,53 +54,44 @@ p {
 }
 .disabled {
   pointer-events: none;
+  opacity: 0.6;
+}
+/* ======== BREADCRUMB ======== */
+.breadcrumb {
+  padding-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.previous-page {
   text-decoration: none;
+  color: #fff;
 }
 
-/* ======== INTRO ======== */
+/* ======== ABOUT US ======== */
+.nav-item-tab1,
+.nav-item-tab2,
+.nav-item-tab3,
+.nav-item-tab4 {
+  border-top: 2px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-radius: 10px 10px 0px 0px;
+}
+.nav-item-tab1 {
+  border-left: 2px solid;
+}
+.nav-item-tab4 {
+  border-right: 2px solid;
+}
 
-.carousel {
-  margin: 0 auto;
-  max-width: 100%;
-  align-self: center;
-  padding-bottom: 50px;
-}
-#two {
-  color: black;
-}
-/* ======== ARTICLES ======== */
-.articles {
-  padding-bottom: 20px;
-}
-.col-sm {
-  padding-bottom: 20px;
-}
 .box {
+  border: 1px solid;
   padding: 20px;
-  border: solid 1px white;
-  align-items: center;
 }
 
-.article-photo {
-  width: 100%;
-}
+/* ======== MAP ======== */
 
-/* === TEXT ARTICLES === */
-
-.article-nav-link {
-  text-decoration: none;
-  opacity: 0.7;
-  transition: opacity 0.1s linear;
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.article-nav-link:hover {
-  opacity: 1;
-}
-.articles-text {
-  font-size: 12px;
-  padding-top: 8px;
+.map {
+  padding-bottom: 50px;
 }
 /* ======== FOOTER ======== */
 
@@ -104,7 +102,6 @@ p {
 
 .footer-text {
   font-size: 12px;
-  padding-block: 10px;
   margin-inline-start: 10px;
   max-width: 50%;
   position: absolute;

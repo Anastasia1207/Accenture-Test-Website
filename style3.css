@@ -16,13 +16,17 @@ body {
   background-color: black;
 }
 
-/* ОТСАВИТЬ? */
-h1 {
-  margin: 0;
+h4 {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 10px;
 }
 
 p {
   margin: 0 0 10px;
+  padding: 20px;
 }
 
 /* ======== CONTAINER  ======== */
@@ -34,6 +38,7 @@ p {
 }
 
 /* ======== HEADER ======== */
+
 .navbar-brand {
   font-family: "Playfair Display", serif;
 }
@@ -45,56 +50,39 @@ p {
 .navbar-collapse {
   flex-grow: 0;
 }
-.disabled {
-  pointer-events: none;
+
+/* ======== BREADCRUMB ======== */
+
+.breadcrumb {
+  padding-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.previous-page {
   text-decoration: none;
+  color: #fff;
 }
 
-/* ======== INTRO ======== */
-
-.carousel {
-  margin: 0 auto;
-  max-width: 100%;
-  align-self: center;
-  padding-bottom: 50px;
-}
-#two {
-  color: black;
-}
 /* ======== ARTICLES ======== */
-.articles {
-  padding-bottom: 20px;
+
+.main-row-articles {
+  padding-top: 15px;
+  padding-bottom: 100px;
 }
-.col-sm {
-  padding-bottom: 20px;
+.resize {
+  width: 100px;
+  height: auto;
+  justify-items: center;
+  padding: 0 auto;
 }
-.box {
-  padding: 20px;
-  border: solid 1px white;
+.first {
   align-items: center;
+  padding-left: 20px;
+}
+.second,
+.third {
+  padding-top: 20px;
 }
 
-.article-photo {
-  width: 100%;
-}
-
-/* === TEXT ARTICLES === */
-
-.article-nav-link {
-  text-decoration: none;
-  opacity: 0.7;
-  transition: opacity 0.1s linear;
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.article-nav-link:hover {
-  opacity: 1;
-}
-.articles-text {
-  font-size: 12px;
-  padding-top: 8px;
-}
 /* ======== FOOTER ======== */
 
 .footer {

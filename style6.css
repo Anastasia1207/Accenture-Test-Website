@@ -16,10 +16,22 @@ body {
   background-color: black;
 }
 
+h2,
+h5,
+a,
 p {
   margin: 0 0 10px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-
+a {
+  text-decoration: none;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
 /* ======== CONTAINER  ======== */
 
 .container {
@@ -40,7 +52,6 @@ p {
 .navbar-collapse {
   flex-grow: 0;
 }
-
 .disabled {
   pointer-events: none;
   text-decoration: none;
@@ -54,66 +65,51 @@ p {
   text-decoration: none;
   color: #fff;
 }
-/* ======== ARTICLES ======== */
 
-.articles {
-  padding-top: 70px;
-  padding-bottom: 20px;
-  color: white;
+/* ======== ABOUT US ======== */
+.nav-item-tab1,
+.nav-item-tab2,
+.nav-item-tab3,
+.nav-item-tab4 {
+  border-top: 2px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-radius: 10px 10px 0px 0px;
 }
-
-#first,
-#second,
-#third {
-  border-bottom: 1px solid rgb(223, 220, 220);
-  padding: 30px;
-  padding-bottom: 30px;
+.nav-item-tab1 {
+  border-left: 2px solid;
 }
-.article-nav-link {
-  text-decoration: none;
-  transition: opacity 0.1s linear;
-  font-weight: 900;
-  font-size: 22px;
-}
-.article-nav-link:hover {
-  color: rgb(220, 220, 224);
-  opacity: 1;
+.nav-item-tab4 {
+  border-right: 2px solid;
 }
 
-.text {
-  padding-top: 20px;
+.box {
+  border: 1px solid;
+  padding: 20px;
 }
 
-/* ======== PAGE NAVIGATION ======== */
-
-.page-navigation {
-  padding-bottom: 70px;
-  padding-top: 0px;
-  padding-right: 50px;
-  direction: none;
-}
-.page-link {
-  color: white !important;
-  border-radius: 3px;
-  background-color: black;
-  transition: opacity 0.1s linear;
-}
-.page-link:hover {
-  background-color: grey;
-  text-decoration: none !important;
+.image {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* ======== MAP ======== */
+
+.map {
+  padding-bottom: 50px;
+}
 /* ======== FOOTER ======== */
 
 .footer {
   border-top: 1px solid white;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  padding: 10px;
+  position: relative;
 }
 
 .footer-text {
   font-size: 12px;
   margin-inline-start: 10px;
+  max-width: 50%;
+  position: absolute;
 }
