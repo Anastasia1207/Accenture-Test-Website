@@ -14,21 +14,18 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   background-color: black;
-  /* height: 100%; */
 }
 
 p {
   margin: 0 0 10px;
 }
 
-h2,
-a,
-p {
-  margin: 0 0 10px;
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
-  padding-bottom: 10px;
-  padding-top: 10px;
+/* ======== CONTAINER  ======== */
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 /* ======== HEADER ======== */
@@ -47,6 +44,15 @@ p {
 .disabled {
   pointer-events: none;
   text-decoration: none;
+}
+/* ======== BREADCRUMB ======== */
+.breadcrumb {
+  padding-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.previous-page {
+  text-decoration: none;
+  color: #fff;
 }
 /* ======== BREADCRUMB ======== */
 .breadcrumb {

@@ -16,11 +16,6 @@ body {
   background-color: black;
 }
 
-/* ОТСАВИТЬ? */
-h1 {
-  margin: 0;
-}
-
 p {
   margin: 0 0 10px;
 }
@@ -45,16 +40,26 @@ p {
 .navbar-collapse {
   flex-grow: 0;
 }
+
 .disabled {
   pointer-events: none;
   text-decoration: none;
 }
+/* ======== BREADCRUMB ======== */
+.breadcrumb {
+  padding-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.previous-page {
+  text-decoration: none;
+  color: #fff;
+}
 
-/* ======== INTRO ======== */
+/* ======== CAROUSEL ======== */
 
 .carousel {
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   align-self: center;
   padding-bottom: 50px;
 }
@@ -64,6 +69,8 @@ p {
 /* ======== ARTICLES ======== */
 .articles {
   padding-bottom: 20px;
+  padding-left: 30px;
+  width: 100%;
 }
 .col-sm {
   padding-bottom: 20px;
@@ -99,13 +106,13 @@ p {
 
 .footer {
   border-top: 1px solid white;
-  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
 }
 
 .footer-text {
   font-size: 12px;
-  padding-block: 10px;
   margin-inline-start: 10px;
-  max-width: 50%;
-  position: absolute;
 }

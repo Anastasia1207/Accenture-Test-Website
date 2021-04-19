@@ -81,9 +81,14 @@ p {
 }
 
 .text {
-  padding-top: 20px;
+  /* padding-top: 10px; */
 }
-
+.img {
+  width: 100%;
+}
+.staring-cat {
+  padding-bottom: 30px;
+}
 /* ======== PAGE NAVIGATION ======== */
 
 .page-navigation {
@@ -107,13 +112,12 @@ p {
 
 .footer {
   border-top: 1px solid white;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  padding: 10px;
+  position: relative;
 }
 
 .footer-text {
   font-size: 12px;
+  padding-top: 10px;
   margin-inline-start: 10px;
+  max-width: 50%;
 }

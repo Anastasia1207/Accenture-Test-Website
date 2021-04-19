@@ -3,8 +3,8 @@ const submitButton = registrationForm.elements['submit']
 const passwordInput =registrationForm.elements['password']
 const repeatPasswordInput = registrationForm.elements['passwordRepeat']
 
-registrationForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+registrationForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
     if (passwordInput.value !== repeatPasswordInput.value) {
         alert('Passwords does not match')
@@ -14,8 +14,8 @@ registrationForm.addEventListener('submit', (e) => {
     alert('Successfully submitted')
 })
 
-registrationForm.elements['TandC'].addEventListener('change', (e) => {
-    if (e.target.checked) {
+registrationForm.elements['TandC'].addEventListener('change', (event) => {
+    if (event.target.checked) {
         submitButton.disabled = false
     } else {
         submitButton.disabled = true
