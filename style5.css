@@ -10,7 +10,6 @@ html {
 
 body {
   color: #fff;
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   background-color: black;
@@ -29,6 +28,7 @@ p {
 }
 
 /* ======== HEADER ======== */
+
 .navbar-brand {
   font-family: "Playfair Display", serif;
 }
@@ -45,7 +45,9 @@ p {
   pointer-events: none;
   text-decoration: none;
 }
+
 /* ======== BREADCRUMB ======== */
+
 .breadcrumb {
   padding-top: 10px;
   font-family: "Times New Roman", Times, serif;
@@ -54,7 +56,9 @@ p {
   text-decoration: none;
   color: #fff;
 }
+
 /* ======== REGISTER ======== */
+
 .register {
   padding: 30px;
   padding-bottom: 150px;
@@ -67,6 +71,7 @@ p {
 .country-selector {
   size: 100px;
 }
+
 /* ======== FOOTER ======== */
 
 .footer {

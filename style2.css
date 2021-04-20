@@ -10,7 +10,6 @@ html {
 
 body {
   color: #fff;
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   background-color: black;
@@ -29,6 +28,7 @@ p {
 }
 
 /* ======== HEADER ======== */
+
 .navbar-brand {
   font-family: "Playfair Display", serif;
 }
@@ -45,7 +45,9 @@ p {
   pointer-events: none;
   text-decoration: none;
 }
+
 /* ======== BREADCRUMB ======== */
+
 .breadcrumb {
   padding-top: 10px;
   font-family: "Times New Roman", Times, serif;
@@ -54,10 +56,11 @@ p {
   text-decoration: none;
   color: #fff;
 }
+
 /* ======== ARTICLES ======== */
 
 .articles {
-  padding-top: 70px;
+  padding-top: 10px;
   padding-bottom: 20px;
   color: white;
 }
@@ -80,15 +83,13 @@ p {
   opacity: 1;
 }
 
-.text {
-  /* padding-top: 10px; */
-}
 .img {
   width: 100%;
 }
 .staring-cat {
   padding-bottom: 30px;
 }
+
 /* ======== PAGE NAVIGATION ======== */
 
 .page-navigation {
