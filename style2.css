@@ -41,7 +41,7 @@ p {
   flex-grow: 0;
 }
 
-.disabled {
+.active {
   pointer-events: none;
   text-decoration: none;
 }
@@ -72,8 +72,10 @@ p {
   border-bottom: 1px solid rgb(223, 220, 220);
   padding: 30px;
   padding-bottom: 30px;
+  align-items: center;
 }
 .article-nav-link {
+  color: blue;
   text-decoration: none;
   transition: opacity 0.1s linear;
   font-weight: 900;
@@ -90,7 +92,9 @@ p {
 .staring-cat {
   padding-bottom: 30px;
 }
-
+.text {
+  padding-left: 20px;
+}
 /* ======== PAGE NAVIGATION ======== */
 
 .page-navigation {

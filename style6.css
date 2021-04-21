@@ -45,7 +45,7 @@ h5 {
   flex-grow: 0;
 }
 
-.disabled {
+.active {
   pointer-events: none;
   text-decoration: none;
 }

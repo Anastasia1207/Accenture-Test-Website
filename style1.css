@@ -41,7 +41,7 @@ p {
   flex-grow: 0;
 }
 
-.disabled {
+.active {
   pointer-events: none;
   text-decoration: none;
 }
@@ -81,6 +81,7 @@ p {
 
 .article-nav-link {
   text-decoration: none;
+  /* rgb(106, 106, 168); */
   opacity: 0.7;
   transition: opacity 0.1s linear;
   margin-bottom: 20px;
@@ -89,6 +90,7 @@ p {
 
 .article-nav-link:hover {
   opacity: 1;
+  color: #fff;
 }
 .articles-text {
   font-size: 12px;
